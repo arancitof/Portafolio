@@ -8,7 +8,7 @@ function App  ()  {
     {
       title: 'Petcalli',
       description: 'E-Commerce enfocado en la compra venta de bienes y servicios para los mas queridos del hogar',
-      image: '../public/Petcalli.png',
+      image: '/public/Petcalli.png',
       link: 'https://petcalli.netlify.app/',
       tags: ['JavaScript', 'E-commerce', 'Bootstrap', 'JAVA']
 
@@ -16,14 +16,14 @@ function App  ()  {
     {
       title: 'Colibri Creativa',
       description: 'EN DESARROLLO... Colibri Creativa será una E-Commerce dedicada a la compra de artesanías elaboradas por manos Mexiquenses ',
-      image: '../public/ColibriCreativa.jpeg',
+      image: '/public/ColibriCreativa.jpeg',
       link: '',
       tags: ['JavaScript', 'React', 'tailwindcss', 'E-commerce']
     },
     {
       title: 'Mi Figma',
       description:'Mockup y Wireframe utilizados',
-      image: '../public/Figma.png',
+      image: '/public/Figma.png',
       link: 'https://www.figma.com/design/K0W38LR3eB1aou1zcU49sy/PROYECTO-INTEGRADOR-Petcalli?node-id=0-1&t=2NMohgDrRar9m2CW-1',
       tags: ['Figma']
     }
