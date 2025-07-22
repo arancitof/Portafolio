@@ -26,6 +26,13 @@ function App  ()  {
       image: '/Figma.png',
       link: 'https://www.figma.com/design/K0W38LR3eB1aou1zcU49sy/PROYECTO-INTEGRADOR-Petcalli?node-id=0-1&t=2NMohgDrRar9m2CW-1',
       tags: ['Figma']
+    },
+    {
+      title: 'Gestor de Tareas',
+      description: 'Gestor de tareas básico y responsivo ',
+      image: '/Gestor.png',
+      link: 'https://gestor-tareas001.netlify.app/',
+      tags: ['React', 'Bootstrap', 'Herramienta'],
     }
   ];
 
