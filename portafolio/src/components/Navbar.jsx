@@ -1,6 +1,7 @@
 import { FlaskConical, X, Menu } from 'lucide-react';
 import React from 'react';
 import { useState  } from 'react';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     const [ isOpen, setIsOpen ] = React.useState(false);
@@ -16,9 +17,10 @@ const Navbar = () => {
                     </div>
                     {/* Menu */}
                     <div className='hidden md:flex space-x-6 text-sm font-medium text-gray-700'>
-                        <a href="projects" className='hover:text-cyan-700'>Proyectos</a>
-                        <a href="about" className='hover:text-cyan-700'>Sobre Mi</a>
-                        <a href="contact" className='hover:text-cyan-700'>Contacto</a>
+                        <Link to='/' className='hover:text-cyan-700'>Inicio</Link>
+                        <Link to='/proyectos' className='hover:text-cyan-700'>Proyectos</Link>
+                        <Link to='/contacto' className='hover:text-cyan-700'>Contacto</Link>
+
                     </div>
                     {/* Menu Hamburguesa */}
                     <div className='md:hidden'>
@@ -32,9 +34,10 @@ const Navbar = () => {
                         {
                             isOpen && (
                                 <div className='md:hidden mt-2 space-y-2 text-sm text-gray-700'>
-                                    <a href="projects">Proyectos</a>
-                                    <a href="about">Sobre mí</a>
-                                    <a href="contact">Contacto</a>
+                                    <Link to='/' onClick={ () => setIsOpen(false)}>Inicio</Link>
+                                    <Link to='/proyectos' onClick={() => setIsOpen(false)}>Proyectos</Link>
+                                    <Link to='/proyectos' onClick={() => setIsOpen(false)}>Contacto</Link>
+
                                     </div>
                             )
                         }

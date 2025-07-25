@@ -1,24 +1,33 @@
 import React from "react"
-import ProyectCard from "./components/ProyectCard"
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProjectSection from './components/PojectSection'
 import Navbar from "./components/Navbar";
 import HomeSection from "./components/HomeSection";
+import Projects from "./pages/Projects";
+import Contacto from "./pages/Contacto";
 
 
-function App  ()  {
-  
+function App() {
+
 
   return (
-    <div className="bg-gradient-to-b from white to-cyan-50 min-h-screen">
-      <Navbar />
-      <HomeSection />
-      <ProjectSection />
+    <Router>
+      {/* <div className="bg-gradient-to-b from white to-cyan-50 min-h-screen"> */}
+        <Navbar />
+        
+        <Routes>
+          <Route path="/" element={<HomeSection />} />
+          <Route path="/proyectos" element={ <Projects /> } />
+          <Route path="/contacto" element= { <Contacto />} />
 
 
 
 
-    </div>
-  
+
+      </Routes>
+     {/*  </div> */}
+    </Router>
+
   );
 
 
