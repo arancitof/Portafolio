@@ -33,10 +33,10 @@ const Navbar = () => {
                         {/* Menu Desplegable */}
                         {
                             isOpen && (
-                                <div className='md:hidden mt-2 space-y-2 text-sm text-gray-700'>
-                                    <Link to='/' onClick={ () => setIsOpen(false)}>Inicio</Link>
-                                    <Link to='/proyectos' onClick={() => setIsOpen(false)}>Proyectos</Link>
-                                    <Link to='/proyectos' onClick={() => setIsOpen(false)}>Contacto</Link>
+                                <div className='md:hidden flex flex-col mt-2 space-y-4 bg-white rounded shadow-md p-4 text-sm font-medium text-gray-700'>
+                                    <Link to='/' onClick={ () => setIsOpen(false)} className='hover:text-cyan-700 block w-full'>Inicio</Link>
+                                    <Link to='/proyectos' onClick={() => setIsOpen(false)} className='hover:text-cyan-700 block w-full'>Proyectos</Link>
+                                    <Link to='/contacto' onClick={() => setIsOpen(false)} className='hover:text-cyan-700 block w-full'>Contacto</Link>
 
                                     </div>
                             )

@@ -36,11 +36,11 @@ const PojectSection = () => {
 
     return (
         <section id='projects' className="p-8 pt-16">
-            <h2 className="text-2x1 font-bold text-center text-cyan-700 mb-6">
+            <h2 className="text-2x1 font-bold text-center text-cyan-700 mb-6 ">
                 Mis Proyectos
             </h2>
 
-            <div className="min-h-screen bg-gradient-to-b from-white to-cyan-50 p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-white p-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                 {proyects.map((project, index) => (
                     <ProyectCard key={index} {...project} />
                 ))}
