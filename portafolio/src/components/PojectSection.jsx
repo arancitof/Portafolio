@@ -15,8 +15,8 @@ const PojectSection = () => {
             title: 'Colibri Creativa',
             description: 'EN DESARROLLO... Colibri Creativa será una E-Commerce dedicada a la compra de artesanías elaboradas por manos Mexiquenses ',
             image: '/ColibriCreativa.jpeg',
-            link: '',
-            tags: ['JavaScript', 'React', 'tailwindcss', 'E-commerce']
+            link: 'https://colibri-creativa.vercel.app/',
+            tags: ['JavaScript', 'React', 'tailwindcss', 'E-commerce', 'Python', 'Material UI']
         },
         {
             title: 'Mi Figma',
